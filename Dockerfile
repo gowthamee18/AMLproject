@@ -286,43 +286,5 @@ RUN echo 'export PS1="\[\033[1;36m\]\u@\[\033[1;32m\]\h:\[\033[1;34m\]\w\[\033[0
 
 CMD ["/bin/bash"]
 
-################# TODO 10 #################
-# Now it is time to build our Docker image and run it! If you need a remind be sure to review
-# the part 3 Docker video in the Canvas module.
-#
-# 1. Using the command line build this Dockerfile using the following command: 
-#    "docker build -t docker-lab-5156 ." command. You can adjust this command as 
-#     needed but be sure to tag your Docker image as "docker-lab-5156".
-# 2. After building the image let's try running the container by using the following command:
-#    `docker run  -it --rm -p 8888:8888 --name docker-lab docker-lab-5156`. This should
-#    automatically attach you to your newly created container where you can run the
-#    Jupyter Notebook using the command `jupyter-notebook --ip 0.0.0.0` where you can try  
-#    creating a notebook and importing some libraries like numpy or sklearn!
-#
-# Finally you'll need to push your Docker your personal Docker Hub as you'll need
-# to submit a link along with the completed Dockerfile! If you didn't create a 
-# Docker Hub account when installing Docker now is the time to do so. 
-# Go to https://hub.docker.com/ and create an account and then sign in either through
-# the command line by entering "Docker login" and then entering your credentials 
-# or by signing in through the DockerDesktop GUI if you are on Windows.
-#
-# In order to push your image to DockerHub you will also need to retag the 
-# image you just created. If you need more guidance checkout the part 4 Docker 
-# video in the Canvas module.
-# 1. If you haven't already, first retag the Docker image by using the following 
-#    command "docker tag docker-lab-5156 <your Docker account username>/docker-lab-5156".
-#    Feel free to edit this command as you please but be sure the Docker image 
-#    name ends with "docker-lab-5156" (not including the tag). Note,
-#    if you are on Linux you may need to add 'sudo' to the start of the command.
-# 2. Push the docker image to your Docker Hub by entering the following command
-#    into the command line replacing the <> with your Docker account username: 
-#    "docker push <your Docker account username>/docker-lab-5156""
-#    into the command line: "docker push <your Docker account username>/docker5156".
-#    Note, if you are on Linux you may need to add 'sudo' to the start of the command.
-#
-# Points for this TODO are determined by whether or not your image has been pushed 
-# to Docker Hub. Be sure to submit the link to your Docker Hub when you submit the Dockerfile!
-
-################# SUBMIT #################
 # Once you have built your image and pushed it to Docker Hub submit this 
 # Dockerfile AND a link to your Docker Hub image that you just pushed!
